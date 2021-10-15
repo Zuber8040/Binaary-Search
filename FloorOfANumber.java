@@ -1,17 +1,16 @@
-// import jdk.javadoc.internal.doclets.formats.html.resources.standard;
-
 /**
- * CeilingofaNumber
+ * FloorOfANumber
  */
-public class CeilingofaNumber{
+public class FloorOfANumber {
     public static void main(String[] args) {
         int [] arr ={2,3,5,9,14,16,18};
-        int target = 15;
-        int ans  = celing(arr,target);
+        int target = 3;
+        int ans  = floor(arr,target);
         System.out.println(ans);
-
     }
-    static int celing(int []arr,int target){
+    static int floor(int []arr,int target){
+
+        if(target>arr[arr.length-1]) return -1;
         int start=0;
         // s-> start e->end
         int end = arr.length-1;
@@ -23,6 +22,7 @@ public class CeilingofaNumber{
             else if(target>arr[mid]) start=mid+1;
             else return mid;
         }
-        return arr[start];
+        return arr[end];
     }
+    
 }

@@ -1,7 +1,7 @@
 public class Binar{
    public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,6,7,10};
-        int k=1;
+        int k=6;
         int ans = binnarySearch(arr, k);
         System.out.println(ans);
    }
@@ -10,7 +10,7 @@ public class Binar{
 
    static int binnarySearch(int [] arr,int k){
 
-       int start = arr[0] ;
+       int start = 0 ;
        int end=arr.length-1;
        while(start<=end){
             // step 1:  find the middle
