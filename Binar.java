@@ -16,9 +16,9 @@ public class Binar{
             // step 1:  find the middle
             // int mid=(start+end)/2;
             int mid = start+(end -start)/2;
-           if(k<=arr[mid]){
+           if(k<arr[mid]){
                     end = end-1;
-                }else if(k>=arr[mid]){
+                }else if(k>arr[mid]){
                     start=mid+1;
                 }else{
                     // ans found 
